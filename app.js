@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://admin-robin:Himym123@cluster0.qbqqf.mongodb.net/blogDB?retryWrites=true&w=majority',{useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect('mongodb+srv://admin-robin:jkgf4ZaZcEZNxLvp@cluster0.qbqqf.mongodb.net/blogDB?retryWrites=true&w=majority',{useNewUrlParser:true, useUnifiedTopology:true});
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(){
